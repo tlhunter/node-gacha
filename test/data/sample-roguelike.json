@@ -1,0 +1,65 @@
+{
+  "101": {
+    "name": "Knife",
+    "level": 1,
+    "weight": 1.0,
+    "spread": 4
+  },
+  "102": {
+    "name": "Sword",
+    "level": 5,
+    "weight": 1.0,
+    "spread": 4
+  },
+  "103": {
+    "name": "Rapier",
+    "level": 9,
+    "weight": 1.0,
+    "spread": 5
+  },
+
+  "201": {
+    "name": "Shield",
+    "level": 3,
+    "weight": 1.0,
+    "spread": 4
+  },
+  "202": {
+    "name": "Buckler",
+    "level": 7,
+    "weight": 1.0,
+    "spread": 4
+  },
+  "203": {
+    "name": "Epic Shield",
+    "level": 10,
+    "weight": 2.0,
+    "spread": 1
+  },
+
+  "301": {
+    "name": "Potion I",
+    "level": 1,
+    "weight": 4.0,
+    "spread": 1
+  },
+  "302": {
+    "name": "Potion II",
+    "level": 2,
+    "weight": 4.0,
+    "spread": 1
+  },
+  "303": {
+    "name": "Potion III",
+    "level": 3,
+    "weight": 4.0,
+    "spread": 1
+  },
+
+  "500": {
+    "name": "Magic Hammer",
+    "level": 20,
+    "weight": 0.5,
+    "spread": 0
+  }
+}

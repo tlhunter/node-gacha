@@ -4,7 +4,7 @@
   "description": "Roguelike item drop distribution calculator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/PhobosRising/node-gacha/issues"
   },
-  "homepage": "https://github.com/PhobosRising/node-gacha#readme"
+  "homepage": "https://github.com/PhobosRising/node-gacha#readme",
+  "dependencies": {
+    "gaussian": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
 }

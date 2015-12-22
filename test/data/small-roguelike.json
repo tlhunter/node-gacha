@@ -1,0 +1,20 @@
+{
+  "101": {
+    "name": "Knife",
+    "level": 1,
+    "weight": 1.0,
+    "spread": 1
+  },
+  "102": {
+    "name": "Sword",
+    "level": 2,
+    "weight": 1.0,
+    "spread": 2
+  },
+  "103": {
+    "name": "Rapier",
+    "level": 3,
+    "weight": 2.0,
+    "spread": 3
+  }
+}
