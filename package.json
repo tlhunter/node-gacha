@@ -1,0 +1,26 @@
+{
+  "name": "gacha",
+  "version": "0.0.1",
+  "description": "Roguelike item drop distribution calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhobosRising/node-gacha.git"
+  },
+  "keywords": [
+    "gacha",
+    "rpg",
+    "roguelike",
+    "game",
+    "statistics"
+  ],
+  "author": "Thomas Hunter II <me@thomashunter.name>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhobosRising/node-gacha/issues"
+  },
+  "homepage": "https://github.com/PhobosRising/node-gacha#readme"
+}
