@@ -1,16 +1,27 @@
 # Node Gacha
 
-Given a database of items with variable drop rates, determine the odds of an item being dropped on a particular level.
+Node Gacha (named after the Japanese onomatopoeia for the sound made by toy machines) aims to be a module providing different methods for calculating randomness in games.
+Randomness can include everything from enemy encounters to item drop rates, particularly useful for RPG's and Roguelikes.
+
+Eventually we'll offer a few different systems, but for now we only support "roguelike".
 
 ```
 npm install gacha
 ```
 
-Eventually we'll offer a few systems of gacha. For now we only support "roguelike".
+## Roguelike
 
-## Roguelike Usage
+**Purpose:** Given a listing of items (or enemies) with variable drop rates, determine the odds of them being dropped on a particular level.
+
+### Diagram
 
 ![Diagram](http://static.zyu.me/projects/node-gacha/roguelike-diagram.png)
+
+The above diagram gives a visualization of how Roguelike works.
+Each item has an ideal level (center of curve), a spread (the radius of the curve), and a weight (makes it taller).
+After passing data through the roguelike function, a list of probabilities of each item spawning is provided on a per-level basis.
+
+### Code Sample
 
 ```javascript
 var gacha = require('gacha');
