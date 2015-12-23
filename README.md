@@ -10,6 +10,8 @@ Eventually we'll offer a few systems of gacha. For now we only support "roguelik
 
 ## Roguelike Usage
 
+![Diagram](http://static.zyu.me/projects/node-gacha/roguelike-diagram.png)
+
 ```javascript
 var gacha = require('gacha');
 
