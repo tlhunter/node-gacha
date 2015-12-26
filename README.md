@@ -26,44 +26,62 @@ After passing data through the roguelike function, a list of probabilities of ea
 ```javascript
 var gacha = require('gacha');
 
+// items must be an object where each property contains level, weight, and spread.
 var items = {
   "101": {
     "name": "Knife",
+    "type": "weapon",
     "level": 1,
     "weight": 1.0,
     "spread": 1
   },
   "102": {
     "name": "Sword",
+    "type": "weapon",
     "level": 2,
     "weight": 1.0,
     "spread": 2
   },
   "103": {
-    "name": "Rapier",
+    "name": "Iron Buckler",
+    "type": "shield",
     "level": 3,
     "weight": 3.0,
     "spread": 3
+  },
+  "104": {
+    "name": "Potion",
+    "type": "heal",
+    "level": 3,
+    "weight": 1.0,
+    "spread": 2
   }
 };
 
-var result = gacha.roguelike(items);
+var equip = gacha.roguelike(items, function(item) {
+  // Optional filter callback, defaults to `return true;`
+  return item.type !== 'heal';
+});
 
-console.log(result); // Shown Below
+console.log(equip); // Shown below
 
 // Which item should we spawn on level 3?
-var random = Math.random() * result[3].total;
+var lvl3 = equip[3];
+var strata = Math.random() * lvl3.total;
+var item = null;
 
-for (var i = 0; i < result[3].strata.length; i++) {
-  if (random < result[3].strata[i]) {
-    var id = result[3].lookup[i];
-    console.log(items[id]);
+for (var i = 0; i < lvl3.strata.length; i++) {
+  if (strata <= lvl3.strata[i]) {
+    var id = lvl3.lookup[i];
+    item = items[id];
     break;
   }
 }
+
+console.log("Receiving item for level three:", item);
 ```
 
-### Result
+### Resulting `equip` object
 
 ```json
 {

@@ -102,4 +102,27 @@ describe('Roguelike', function() {
       }
     });
   });
+
+  describe('with filter', function() {
+    var result;
+    var acceptable = ['101', '102', '103', '500'];
+
+    before(function() {
+      result = roguelike(data_complex, function(item) {
+        return item.type === 'weapon';
+      });
+    });
+
+    it('only returns items where type=weapon', function() {
+      var levels = Object.keys(result);
+
+      for (var index = 0; index < levels.length; index++) {
+        var level = result[levels[index]];
+
+        for (var lookup = 0; lookup < level.lookup.length; lookup++) {
+          assert(acceptable.indexOf(level.lookup[lookup]) !== -1);
+        }
+      }
+    });
+  });
 });
