@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PhobosRising/node-gacha.git"
+    "url": "git+https://github.com/tlhunter/node-gacha.git"
   },
   "keywords": [
     "gacha",
@@ -20,9 +20,9 @@
   "author": "Thomas Hunter II <me@thomashunter.name>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PhobosRising/node-gacha/issues"
+    "url": "https://github.com/tlhunter/node-gacha/issues"
   },
-  "homepage": "https://github.com/PhobosRising/node-gacha#readme",
+  "homepage": "https://github.com/tlhunter/node-gacha#readme",
   "dependencies": {
     "gaussian": "^1.0.0"
   },
