@@ -1,6 +1,6 @@
 {
   "name": "gacha",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Roguelike item drop distribution calculator",
   "main": "index.js",
   "scripts": {
