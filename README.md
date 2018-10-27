@@ -15,7 +15,7 @@ npm install gacha
 
 ### Diagram
 
-![Diagram](http://static.thomashunter.name/projects/node-gacha/roguelike-diagram.png)
+![Diagram](https://github.com/tlhunter/node-gacha/blob/master/screenshot.png)
 
 The above diagram gives a visualization of how Roguelike works.
 Each item has an ideal level (center of curve), a spread (the radius of the curve), and a weight (makes it taller).
